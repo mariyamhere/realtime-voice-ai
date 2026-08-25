@@ -1,0 +1,7 @@
+services:
+  realtime-voice-ai:
+    build: .
+    env_file:
+      - config/.env
+    stdin_open: true
+    tty: true

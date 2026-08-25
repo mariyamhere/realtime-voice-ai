@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "realtime-voice-ai"
+version = "0.1.0"
+description = "Production-oriented streaming STT-LLM-TTS voice AI benchmark"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai>=1.0.0",
+    "soniox>=0.1.0",
+    "silero-vad>=6.2.1",
+    "torch>=2.5,<3",
+    "torchaudio>=2.5,<2.10",
+    "pyaudio>=0.2.14",
+    "python-dotenv>=1.0.1",
+    "numpy>=2.0,<3",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
